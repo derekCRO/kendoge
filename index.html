@@ -1,0 +1,2739 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kendoge</title>
+    <meta name="robots" content="max-image-preview:large" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Kendoge &raquo; Feed"
+      href="https://kendoge.io/feed/"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Kendoge &raquo; Comments Feed"
+      href="https://kendoge.io/comments/feed/"
+    />
+    <script>
+      window._wpemojiSettings = {
+        baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/",
+        ext: ".png",
+        svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/",
+        svgExt: ".svg",
+        source: {
+          concatemoji:
+            "https:\/\/kendoge.io\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.5",
+        },
+      };
+      /*! This file is auto-generated */
+      !(function (i, n) {
+        var o, s, e;
+        function c(e) {
+          try {
+            var t = { supportTests: e, timestamp: new Date().valueOf() };
+            sessionStorage.setItem(o, JSON.stringify(t));
+          } catch (e) {}
+        }
+        function p(e, t, n) {
+          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0);
+          var t = new Uint32Array(
+              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+            ),
+            r =
+              (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+              e.fillText(n, 0, 0),
+              new Uint32Array(
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              ));
+          return t.every(function (e, t) {
+            return e === r[t];
+          });
+        }
+        function u(e, t, n) {
+          switch (t) {
+            case "flag":
+              return n(
+                e,
+                "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
+                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+              )
+                ? !1
+                : !n(
+                    e,
+                    "\ud83c\uddfa\ud83c\uddf3",
+                    "\ud83c\uddfa\u200b\ud83c\uddf3"
+                  ) &&
+                    !n(
+                      e,
+                      "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
+                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                    );
+            case "emoji":
+              return !n(
+                e,
+                "\ud83d\udc26\u200d\u2b1b",
+                "\ud83d\udc26\u200b\u2b1b"
+              );
+          }
+          return !1;
+        }
+        function f(e, t, n) {
+          var r =
+              "undefined" != typeof WorkerGlobalScope &&
+              self instanceof WorkerGlobalScope
+                ? new OffscreenCanvas(300, 150)
+                : i.createElement("canvas"),
+            a = r.getContext("2d", { willReadFrequently: !0 }),
+            o = ((a.textBaseline = "top"), (a.font = "600 32px Arial"), {});
+          return (
+            e.forEach(function (e) {
+              o[e] = t(a, e, n);
+            }),
+            o
+          );
+        }
+        function t(e) {
+          var t = i.createElement("script");
+          (t.src = e), (t.defer = !0), i.head.appendChild(t);
+        }
+        "undefined" != typeof Promise &&
+          ((o = "wpEmojiSettingsSupports"),
+          (s = ["flag", "emoji"]),
+          (n.supports = { everything: !0, everythingExceptFlag: !0 }),
+          (e = new Promise(function (e) {
+            i.addEventListener("DOMContentLoaded", e, { once: !0 });
+          })),
+          new Promise(function (t) {
+            var n = (function () {
+              try {
+                var e = JSON.parse(sessionStorage.getItem(o));
+                if (
+                  "object" == typeof e &&
+                  "number" == typeof e.timestamp &&
+                  new Date().valueOf() < e.timestamp + 604800 &&
+                  "object" == typeof e.supportTests
+                )
+                  return e.supportTests;
+              } catch (e) {}
+              return null;
+            })();
+            if (!n) {
+              if (
+                "undefined" != typeof Worker &&
+                "undefined" != typeof OffscreenCanvas &&
+                "undefined" != typeof URL &&
+                URL.createObjectURL &&
+                "undefined" != typeof Blob
+              )
+                try {
+                  var e =
+                      "postMessage(" +
+                      f.toString() +
+                      "(" +
+                      [JSON.stringify(s), u.toString(), p.toString()].join(
+                        ","
+                      ) +
+                      "));",
+                    r = new Blob([e], { type: "text/javascript" }),
+                    a = new Worker(URL.createObjectURL(r), {
+                      name: "wpTestEmojiSupports",
+                    });
+                  return void (a.onmessage = function (e) {
+                    c((n = e.data)), a.terminate(), t(n);
+                  });
+                } catch (e) {}
+              c((n = f(s, u, p)));
+            }
+            t(n);
+          })
+            .then(function (e) {
+              for (var t in e)
+                (n.supports[t] = e[t]),
+                  (n.supports.everything =
+                    n.supports.everything && n.supports[t]),
+                  "flag" !== t &&
+                    (n.supports.everythingExceptFlag =
+                      n.supports.everythingExceptFlag && n.supports[t]);
+              (n.supports.everythingExceptFlag =
+                n.supports.everythingExceptFlag && !n.supports.flag),
+                (n.DOMReady = !1),
+                (n.readyCallback = function () {
+                  n.DOMReady = !0;
+                });
+            })
+            .then(function () {
+              return e;
+            })
+            .then(function () {
+              var e;
+              n.supports.everything ||
+                (n.readyCallback(),
+                (e = n.source || {}).concatemoji
+                  ? t(e.concatemoji)
+                  : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji)));
+            }));
+      })((window, document), window._wpemojiSettings);
+    </script>
+    <style id="wp-emoji-styles-inline-css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <style id="classic-theme-styles-inline-css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <style id="global-styles-inline-css">
+      body {
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      body .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      body .is-layout-flex > * {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      body .is-layout-grid > * {
+        margin: 0;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      .wp-block-navigation a:where(:not(.wp-element-button)) {
+        color: inherit;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      .wp-block-pullquote {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="wp-components-css"
+      href="https://kendoge.io/wp-includes/css/dist/components/style.min.css?ver=6.5.5"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="godaddy-styles-css"
+      href="https://kendoge.io/wp-content/mu-plugins/vendor/wpex/godaddy-launch/includes/Dependencies/GoDaddy/Styles/build/latest.css?ver=2.0.2"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="live-site-control-css"
+      href="https://kendoge.io/wp-content/mu-plugins/vendor/wpex/godaddy-launch/build/live-site-control.css?ver=17bfadf6c6046575fb0e"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hello-elementor-css"
+      href="https://kendoge.io/wp-content/themes/hello-elementor/style.min.css?ver=3.1.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hello-elementor-theme-style-css"
+      href="https://kendoge.io/wp-content/themes/hello-elementor/theme.min.css?ver=3.1.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="hello-elementor-header-footer-css"
+      href="https://kendoge.io/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.1.1"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-frontend-css"
+      href="https://kendoge.io/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.23.4"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-post-8-css"
+      href="https://kendoge.io/wp-content/uploads/elementor/css/post-8.css?ver=1723434207"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="swiper-css"
+      href="https://kendoge.io/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-pro-css"
+      href="https://kendoge.io/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.23.3"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-global-css"
+      href="https://kendoge.io/wp-content/uploads/elementor/css/global.css?ver=1723434563"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-post-350-css"
+      href="https://kendoge.io/wp-content/uploads/elementor/css/post-350.css?ver=1723630890"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="elementor-post-406-css"
+      href="https://kendoge.io/wp-content/uploads/elementor/css/post-406.css?ver=1723631113"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="google-fonts-1-css"
+      href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.5.5"
+      media="all"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="https://api.w.org/" href="https://kendoge.io/wp-json/" />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="https://kendoge.io/wp-json/wp/v2/pages/350"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="https://kendoge.io/xmlrpc.php?rsd"
+    />
+    <meta name="generator" content="WordPress 6.5.5" />
+    <link rel="canonical" href="https://kendoge.io/" />
+    <link rel="shortlink" href="https://kendoge.io/" />
+    <link
+      rel="alternate"
+      type="application/json+oembed"
+      href="https://kendoge.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkendoge.io%2F"
+    />
+    <link
+      rel="alternate"
+      type="text/xml+oembed"
+      href="https://kendoge.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkendoge.io%2F&#038;format=xml"
+    />
+    <meta
+      name="generator"
+      content="Elementor 3.23.4; features: e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints, e_optimized_control_loading, e_lazyload, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap"
+    />
+    <style>
+      .e-con.e-parent:nth-of-type(n + 4):not(.e-lazyloaded):not(.e-no-lazyload),
+      .e-con.e-parent:nth-of-type(n + 4):not(.e-lazyloaded):not(.e-no-lazyload)
+        * {
+        background-image: none !important;
+      }
+      @media screen and (max-height: 1024px) {
+        .e-con.e-parent:nth-of-type(n + 3):not(.e-lazyloaded):not(
+            .e-no-lazyload
+          ),
+        .e-con.e-parent:nth-of-type(n + 3):not(.e-lazyloaded):not(
+            .e-no-lazyload
+          )
+          * {
+          background-image: none !important;
+        }
+      }
+      @media screen and (max-height: 640px) {
+        .e-con.e-parent:nth-of-type(n + 2):not(.e-lazyloaded):not(
+            .e-no-lazyload
+          ),
+        .e-con.e-parent:nth-of-type(n + 2):not(.e-lazyloaded):not(
+            .e-no-lazyload
+          )
+          * {
+          background-image: none !important;
+        }
+      }
+    </style>
+    <link
+      rel="icon"
+      href="https://kendoge.io/wp-content/uploads/2024/08/cropped-Frame-5-3-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="https://kendoge.io/wp-content/uploads/2024/08/cropped-Frame-5-3-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://kendoge.io/wp-content/uploads/2024/08/cropped-Frame-5-3-180x180.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://kendoge.io/wp-content/uploads/2024/08/cropped-Frame-5-3-270x270.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+  </head>
+  <body
+    class="home page-template page-template-elementor_canvas page page-id-350 wp-custom-logo elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-350"
+  >
+    <div
+      data-elementor-type="wp-page"
+      data-elementor-id="350"
+      class="elementor elementor-350"
+      data-elementor-post-type="page"
+    >
+      <div
+        class="elementor-element elementor-element-351aac6 e-con-full e-flex e-con e-parent"
+        data-id="351aac6"
+        data-element_type="container"
+        data-settings='{"background_background":"classic"}'
+      >
+        <div
+          class="elementor-element elementor-element-b706280 e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con e-child"
+          data-id="b706280"
+          data-element_type="container"
+          data-settings='{"background_background":"classic"}'
+        >
+          <div
+            class="elementor-element elementor-element-8a9d1bb e-con-full e-flex e-con e-child"
+            data-id="8a9d1bb"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-579543f elementor-widget-mobile__width-initial elementor-widget elementor-widget-image"
+              data-id="579543f"
+              data-element_type="widget"
+              data-widget_type="image.default"
+            >
+              <div class="elementor-widget-container">
+                <style>
+                  /*! elementor - v3.23.0 - 05-08-2024 */
+                  .elementor-widget-image {
+                    text-align: center;
+                  }
+                  .elementor-widget-image a {
+                    display: inline-block;
+                  }
+                  .elementor-widget-image a img[src$=".svg"] {
+                    width: 48px;
+                  }
+                  .elementor-widget-image img {
+                    vertical-align: middle;
+                    display: inline-block;
+                  }
+                </style>
+                <img
+                  decoding="async"
+                  width="26"
+                  height="26"
+                  src="https://kendoge.io/wp-content/uploads/2024/08/Frame-5-2.png"
+                  class="attachment-large size-large wp-image-562"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-c0381b4 elementor-widget elementor-widget-heading"
+              data-id="c0381b4"
+              data-element_type="widget"
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <style>
+                  /*! elementor - v3.23.0 - 05-08-2024 */
+                  .elementor-heading-title {
+                    padding: 0;
+                    margin: 0;
+                    line-height: 1;
+                  }
+                  .elementor-widget-heading
+                    .elementor-heading-title[class*="elementor-size-"]
+                    > a {
+                    color: inherit;
+                    font-size: inherit;
+                    line-height: inherit;
+                  }
+                  .elementor-widget-heading
+                    .elementor-heading-title.elementor-size-small {
+                    font-size: 15px;
+                  }
+                  .elementor-widget-heading
+                    .elementor-heading-title.elementor-size-medium {
+                    font-size: 19px;
+                  }
+                  .elementor-widget-heading
+                    .elementor-heading-title.elementor-size-large {
+                    font-size: 29px;
+                  }
+                  .elementor-widget-heading
+                    .elementor-heading-title.elementor-size-xl {
+                    font-size: 39px;
+                  }
+                  .elementor-widget-heading
+                    .elementor-heading-title.elementor-size-xxl {
+                    font-size: 59px;
+                  }
+                </style>
+                <h2 class="elementor-heading-title elementor-size-default">
+                  kendoge
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-57184d9 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+            data-id="57184d9"
+            data-element_type="widget"
+            data-widget_type="icon-list.default"
+          >
+            <div class="elementor-widget-container">
+              <link
+                rel="stylesheet"
+                href="https://kendoge.io/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css"
+              />
+              <ul class="elementor-icon-list-items">
+                <li class="elementor-icon-list-item">
+                  <a
+                    href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjQwNiIsInRvZ2dsZSI6ZmFsc2V9"
+                  >
+                    <span class="elementor-icon-list-icon">
+                      <svg
+                        aria-hidden="true"
+                        class="e-font-icon-svg e-fas-bars"
+                        viewBox="0 0 448 512"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="elementor-icon-list-text"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-87014e8 e-con-full e-flex e-con e-child"
+          data-id="87014e8"
+          data-element_type="container"
+        >
+          <div
+            class="elementor-element elementor-element-4b798bd animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+            data-id="4b798bd"
+            data-element_type="widget"
+            data-settings='{"_animation":"fadeInUp"}'
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                WOOF WOOF, I AM
+              </h2>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-f1a78b9 animated-slow elementor-invisible elementor-widget elementor-widget-image"
+            data-id="f1a78b9"
+            data-element_type="widget"
+            data-settings='{"_animation":"fadeInUp"}'
+            data-widget_type="image.default"
+          >
+            <div class="elementor-widget-container">
+              <img
+                fetchpriority="high"
+                decoding="async"
+                width="800"
+                height="258"
+                src="https://kendoge.io/wp-content/uploads/2024/08/Kendoge-1-1-1024x330.webp"
+                class="attachment-large size-large wp-image-517"
+                alt=""
+                sizes="(max-width: 800px) 100vw, 800px"
+              />
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-f56d5c8 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+            data-id="f56d5c8"
+            data-element_type="widget"
+            data-settings='{"_animation":"fadeInUp"}'
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                THE BIG BROTHER OF KABO-CHAN
+              </h2>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-1103aa9 e-con-full animated-slow e-flex elementor-invisible e-con e-child"
+            data-id="1103aa9"
+            data-element_type="container"
+            data-settings='{"animation":"fadeInUp"}'
+          >
+            <div
+              class="elementor-element elementor-element-e8aa489 elementor-widget__width-auto e-transform e-transform elementor-widget elementor-widget-button"
+              data-id="e8aa489"
+              data-element_type="widget"
+              data-settings='{"_transform_rotateZ_effect_hover":{"unit":"px","size":10,"sizes":[]},"_transform_rotateZ_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_rotateZ_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewX_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewY_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]}}'
+              data-widget_type="button.default"
+            >
+              <div class="elementor-widget-container">
+                <div class="elementor-button-wrapper">
+                  <a
+                    class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+                    href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x..."
+                  >
+                    <span class="elementor-button-content-wrapper">
+                      <span class="elementor-button-text">Buy Ken</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-1ab2271 elementor-widget__width-auto e-transform elementor-widget elementor-widget-button"
+              data-id="1ab2271"
+              data-element_type="widget"
+              data-settings='{"_transform_rotateZ_effect_hover":{"unit":"px","size":-10,"sizes":[]},"_transform_rotateZ_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_rotateZ_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]}}'
+              data-widget_type="button.default"
+            >
+              <div class="elementor-widget-container">
+                <div class="elementor-button-wrapper">
+                  <a
+                    class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+                    href="https://dexscreener.com/ethereum/0x0123456789"
+                  >
+                    <span class="elementor-button-content-wrapper">
+                      <span class="elementor-button-text">Chart</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-4dc2fb9 e-flex e-con-boxed e-con e-parent"
+        data-id="4dc2fb9"
+        data-element_type="container"
+        data-settings='{"background_background":"classic"}'
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-d57f56a elementor-widget__width-auto e-transform e-transform elementor-widget elementor-widget-button"
+            data-id="d57f56a"
+            data-element_type="widget"
+            data-settings='{"_transform_rotateZ_effect_hover":{"unit":"px","size":10,"sizes":[]},"_transform_rotateZ_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_rotateZ_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewX_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewY_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]}}'
+            data-widget_type="button.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-button-wrapper">
+                <a
+                  class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+                  href="https://t.me/"
+                >
+                  <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="10"
+                        viewBox="0 0 12 10"
+                        fill="none"
+                      >
+                        <path
+                          d="M4.91893 6.33785L4.74484 8.78647C4.99391 8.78647 5.10179 8.67948 5.23115 8.55099L6.39889 7.43499L8.81857 9.207C9.26234 9.45432 9.575 9.32408 9.69471 8.79875L11.283 1.35641L11.2834 1.35597C11.4242 0.699963 11.0462 0.443436 10.6138 0.604368L1.278 4.17864C0.640853 4.42596 0.6505 4.78115 1.16969 4.94208L3.55649 5.68447L9.10053 2.21544C9.36144 2.04267 9.59868 2.13827 9.40354 2.31104L4.91893 6.33785Z"
+                          fill="black"
+                        ></path>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-dba63fe elementor-widget__width-auto e-transform e-transform elementor-widget elementor-widget-button"
+            data-id="dba63fe"
+            data-element_type="widget"
+            data-settings='{"_transform_rotateZ_effect_hover":{"unit":"px","size":10,"sizes":[]},"_transform_rotateZ_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_rotateZ_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewX_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewY_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]}}'
+            data-widget_type="button.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-button-wrapper">
+                <a
+                  class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+                  href="https://x.com/"
+                >
+                  <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="11"
+                        viewBox="0 0 11 11"
+                        fill="none"
+                      >
+                        <path
+                          d="M6.02419 4.61256L8.65285 0.426301L7.89748 0.540254L5.61501 4.17513L2.919 1.29129L0.369263 1.67593L4.44615 6.0368L1.68938 10.4268L2.44479 10.3128L4.85514 6.47426L7.70231 9.51967L10.252 9.13503L6.02401 4.61258L6.02419 4.61256ZM5.17098 5.97129L4.75918 5.53793L1.48265 2.08957L2.64292 1.91454L5.28713 4.69748L5.69893 5.13085L9.13608 8.74823L7.97581 8.92326L5.17101 5.97148L5.17098 5.97129Z"
+                          fill="black"
+                        ></path>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-40f9401 elementor-widget__width-auto e-transform e-transform elementor-widget elementor-widget-button"
+            data-id="40f9401"
+            data-element_type="widget"
+            data-settings='{"_transform_rotateZ_effect_hover":{"unit":"px","size":10,"sizes":[]},"_transform_rotateZ_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_rotateZ_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewX_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewY_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]}}'
+            data-widget_type="button.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-button-wrapper">
+                <a
+                  class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+                  href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x..."
+                >
+                  <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-text">Buy Ken</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-eeb0dea elementor-widget__width-auto e-transform e-transform elementor-widget elementor-widget-button"
+            data-id="eeb0dea"
+            data-element_type="widget"
+            data-settings='{"_transform_rotateZ_effect_hover":{"unit":"px","size":10,"sizes":[]},"_transform_rotateZ_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_rotateZ_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewX_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewY_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]}}'
+            data-widget_type="button.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-button-wrapper">
+                <a
+                  class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+                  href="https://dexscreener.com/ethereum/0x0123456789"
+                >
+                  <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="12"
+                        viewBox="0 0 11 12"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.25514 4.52783C7.62466 4.40413 8.09963 4.21241 8.58818 3.92713C8.6542 4.13234 8.64098 4.30154 8.57427 4.43036C8.52707 4.52112 8.45163 4.59526 8.35845 4.64962C8.25756 4.70835 8.13674 4.7445 8.00728 4.7551C7.76162 4.77542 7.48785 4.7054 7.25514 4.52783ZM7.06956 6.29727L7.49025 6.6246C6.48346 7.01658 6.09439 7.95079 5.66112 8.85314C5.49119 7.8667 5.37241 6.8617 4.51124 6.20933L5.00541 6.00953C5.05199 5.99902 5.09402 5.97407 5.1255 5.93825C5.15697 5.90243 5.17626 5.85759 5.18061 5.81014C5.26199 4.91985 5.55593 4.5621 5.91309 4.36155C6.04118 4.28972 6.17379 4.26318 6.29854 4.28057C6.42329 4.29796 6.54358 4.35976 6.64718 4.46388C6.93588 4.75447 7.12077 5.17896 6.95556 6.05757C6.94677 6.1044 6.95307 6.15281 6.97354 6.19587C6.99402 6.23893 7.02763 6.27442 7.06956 6.29727ZM6.84251 0.378316C7.36929 0.466185 7.88509 0.642468 8.31736 0.905783C8.61667 1.0883 8.88848 1.31217 9.12723 1.56785C9.23505 1.68328 9.32188 1.79237 9.41686 1.91727C9.7128 1.96898 10.1933 1.70003 10.4381 1.41982C9.93255 2.50689 8.16117 3.62691 6.99272 3.98708C6.99229 3.98683 6.99203 3.98652 6.99172 3.98625C6.81576 3.80886 6.6048 3.70303 6.38335 3.67216C6.1619 3.64129 5.93007 3.6854 5.71231 3.8079C5.71195 3.80804 5.7116 3.80834 5.71112 3.80842C4.68568 3.14242 3.28818 1.58066 3.09925 0.396791C3.25798 0.733249 3.64663 1.12335 3.94542 1.15455C4.07097 1.06043 4.18433 0.979207 4.31957 0.897661C4.61914 0.717027 4.94182 0.57603 5.27964 0.482326C5.76748 0.347273 6.31182 0.318774 6.84251 0.378316ZM5.31078 4.25679C4.98922 4.03675 4.58475 3.72244 4.19288 3.31442C4.07326 3.49376 4.0397 3.66013 4.0686 3.80227C4.08922 3.90248 4.14151 3.99443 4.21623 4.0722C4.29725 4.15629 4.40357 4.2241 4.5252 4.2697C4.75594 4.35643 5.03838 4.36394 5.31078 4.25679Z"
+                          fill="black"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.12948 3.56952C9.40583 3.35935 9.65702 3.11909 9.86232 2.90207L9.9267 3.07795C10.1294 3.67739 10.1974 4.25577 10.1099 4.88379L9.97037 5.88028L9.90362 6.39762C9.74716 7.66874 9.84339 8.99029 10.3029 10.2515L9.1452 9.02093L8.01443 10.3857L7.17206 9.34046L5.27373 11.6317L4.07439 8.90868L2.97831 9.68372L2.2639 8.06172L0.813776 8.92873C1.60067 7.8413 2.05465 6.59645 2.25182 5.331L2.32911 4.81512L2.46743 3.81847C2.55498 3.19041 2.77861 2.6527 3.13754 2.13159L3.24754 1.98001C3.38566 2.2449 3.56153 2.54465 3.7699 2.82244L3.67235 2.9687C3.48285 3.25279 3.38669 3.58657 3.45608 3.92642C3.50085 4.14533 3.61067 4.34302 3.76538 4.50381C3.91558 4.65995 4.10277 4.77718 4.30525 4.85327C4.43715 4.90283 4.57412 4.93475 4.71253 4.94968C4.65502 5.12703 4.61469 5.31366 4.587 5.5057L3.25825 6.04287L4.1334 6.70588C4.20335 6.75888 4.26879 6.81755 4.32906 6.8813C5.01388 7.69119 5.19533 9.83003 5.37747 10.8878C5.84198 9.92018 6.60142 7.9125 7.48167 7.32077C7.55706 7.27593 7.63606 7.23739 7.71784 7.20555L8.74095 6.80716L7.60973 5.92707C7.63561 5.73478 7.64786 5.54423 7.64105 5.35791C7.77827 5.3814 7.91874 5.38816 8.05917 5.37657C8.27474 5.35875 8.48688 5.29719 8.67403 5.18808C8.86677 5.07572 9.02652 4.91561 9.1294 4.71728C9.28913 4.40937 9.28788 4.06204 9.18334 3.73693L9.12951 3.56956L9.12948 3.56952Z"
+                          fill="black"
+                        ></path>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-ef04f12 elementor-widget__width-auto e-transform e-transform elementor-widget elementor-widget-button"
+            data-id="ef04f12"
+            data-element_type="widget"
+            data-settings='{"_transform_rotateZ_effect_hover":{"unit":"px","size":10,"sizes":[]},"_transform_rotateZ_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_rotateZ_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewX_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewY_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]}}'
+            data-widget_type="button.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-button-wrapper">
+                <a
+                  class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+                  href="https://www.dextools.io/app/en/ether/pool-explorer/0x0123456789"
+                >
+                  <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="10"
+                        height="11"
+                        viewBox="0 0 10 11"
+                        fill="none"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.90389 1.20759C2.37135 1.62367 1.93726 1.9727 1.93932 1.98325C1.94463 2.01046 3.49163 2.4642 3.54151 2.45315C3.5642 2.44816 3.71573 2.34125 3.87823 2.2156L4.17373 1.98718L4.5644 2.10432L4.95505 2.22149L5.49058 1.85091C6.29751 1.29249 6.38091 1.23223 6.36388 1.22033C6.34128 1.20455 5.99416 1.09355 5.05411 0.801616C4.59979 0.660515 4.15844 0.521413 4.0733 0.492493C3.98817 0.463571 3.9081 0.442453 3.89536 0.44551C3.88262 0.448566 3.43645 0.791506 2.90389 1.20759ZM0.566706 3.02457L0.0118413 3.45503L0.269469 4.84516C0.411166 5.60974 0.535151 6.23379 0.545034 6.23196C0.554882 6.23013 0.83252 6.0434 1.16199 5.81701L1.76103 5.40538L1.48948 3.94009L1.84072 4.05469C2.11137 4.14287 2.38211 4.23075 2.65294 4.31834L3.11391 4.4674L3.28472 4.3486C3.39183 4.27401 3.4986 4.19895 3.60505 4.12342C3.68727 4.06486 3.88973 3.92449 4.05494 3.81145C4.22014 3.69837 4.37188 3.58733 4.39212 3.56468C4.419 3.5346 3.99718 3.39418 2.8319 3.04527C1.95353 2.78227 1.20938 2.57316 1.17823 2.5806C1.14707 2.58804 0.871887 2.78781 0.566706 3.02457ZM6.62171 1.99443C6.23878 2.26041 5.92657 2.48562 5.92789 2.49492C5.92923 2.5042 6.18207 2.59734 6.48978 2.70184C6.79747 2.80637 7.05078 2.90025 7.05268 2.9105C7.05457 2.92073 6.83005 3.08589 6.55377 3.27757C6.27745 3.46922 5.57917 3.95438 5.00199 4.35571L3.06804 5.70037C2.58156 6.03864 2.14306 6.34354 2.0936 6.37799C1.10006 7.0696 0.827219 7.26099 0.790616 7.29194C0.753814 7.3231 0.769823 7.46152 0.88964 8.14893L1.03254 8.96881L1.633 9.14653L2.23345 9.32424L2.93066 8.84008C3.31415 8.57381 3.62605 8.34606 3.62381 8.33396C3.62157 8.32189 3.53491 8.28587 3.43127 8.25385C3.32758 8.22185 3.11217 8.14838 2.95252 8.09055C2.79289 8.03271 2.63496 7.98177 2.60153 7.97732C2.56812 7.97291 2.53947 7.95966 2.53782 7.94786C2.53618 7.9361 2.84173 7.71496 3.21677 7.45644C3.94523 6.95435 4.50234 6.56818 5.69791 5.7366C6.23254 5.36481 6.76727 4.99316 7.30211 4.62166C7.77216 4.29521 8.31846 3.91444 8.51611 3.77551L8.87546 3.52291L8.73082 2.69372L8.58623 1.86456L7.97683 1.68222C7.64165 1.58195 7.35629 1.50237 7.34266 1.50538C7.32903 1.50835 7.00461 1.72841 6.62171 1.99443ZM8.93097 4.65456C8.85638 4.70979 8.70829 4.81477 8.60188 4.88782C8.49547 4.96088 8.2938 5.1009 8.15374 5.19901L7.89909 5.37735L8.02739 6.10506C8.09794 6.50529 8.14348 6.83318 8.1286 6.83376C8.09477 6.83497 7.52393 6.66438 6.94789 6.48086C6.53214 6.34843 6.50689 6.34478 6.42617 6.40524C6.37951 6.44021 6.09791 6.63477 5.80043 6.83766C5.50293 7.04053 5.2507 7.21779 5.23985 7.23162C5.22904 7.24543 5.9465 7.47778 6.83427 7.74799L8.44834 8.23929L9.01708 7.79752C9.32985 7.55458 9.59377 7.33694 9.60351 7.31391C9.62546 7.26213 9.11792 4.53808 9.08807 4.54742C9.07627 4.55111 9.00555 4.59933 8.93097 4.65456ZM6.04044 8.498C5.94002 8.5651 5.83964 8.63226 5.73931 8.69949C5.4364 8.9029 5.50181 8.89566 5.07392 8.77335C4.78893 8.69189 4.66903 8.67268 4.62381 8.70117C4.5899 8.72254 4.301 8.92265 3.98176 9.14588C3.66255 9.36909 3.38928 9.55396 3.37449 9.5567C3.22822 9.58381 3.4983 9.68395 4.52427 9.98309L5.72749 10.3339L6.14815 10.0196C6.37952 9.84678 6.84651 9.49998 7.18595 9.24896C7.52535 8.9979 7.79756 8.78863 7.79086 8.78388C7.78411 8.77916 7.44174 8.67665 7.02999 8.55609L6.28137 8.33694L6.04044 8.498Z"
+                          fill="black"
+                        ></path>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-fb8397c e-con-full e-flex e-con e-parent"
+        data-id="fb8397c"
+        data-element_type="container"
+      >
+        <div
+          class="elementor-element elementor-element-0448ea6 e-con-full e-flex e-con e-child"
+          data-id="0448ea6"
+          data-element_type="container"
+        >
+          <div
+            class="elementor-element elementor-element-2ba1e6d elementor-widget-mobile__width-initial elementor-widget__width-initial elementor-widget elementor-widget-heading"
+            data-id="2ba1e6d"
+            data-element_type="widget"
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                The untold story of ken, the big brother of kabosu and neiro
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-7060abe e-con-full e-transform e-flex e-con e-parent"
+        data-id="7060abe"
+        data-element_type="container"
+        data-settings='{"background_background":"classic","_transform_rotateZ_effect":{"unit":"px","size":-2,"sizes":[]},"_transform_rotateZ_effect_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_rotateZ_effect_mobile":{"unit":"deg","size":"","sizes":[]}}'
+      >
+        <div
+          class="elementor-element elementor-element-fbde37b elementor-widget elementor-widget-spacer"
+          data-id="fbde37b"
+          data-element_type="widget"
+          data-widget_type="spacer.default"
+        >
+          <div class="elementor-widget-container">
+            <style>
+              /*! elementor - v3.23.0 - 05-08-2024 */
+              .elementor-column .elementor-spacer-inner {
+                height: var(--spacer-size);
+              }
+              .e-con {
+                --container-widget-width: 100%;
+              }
+              .e-con-inner > .elementor-widget-spacer,
+              .e-con > .elementor-widget-spacer {
+                width: var(--container-widget-width, var(--spacer-size));
+                --align-self: var(--container-widget-align-self, initial);
+                --flex-shrink: 0;
+              }
+              .e-con-inner
+                > .elementor-widget-spacer
+                > .elementor-widget-container,
+              .e-con > .elementor-widget-spacer > .elementor-widget-container {
+                height: 100%;
+                width: 100%;
+              }
+              .e-con-inner
+                > .elementor-widget-spacer
+                > .elementor-widget-container
+                > .elementor-spacer,
+              .e-con
+                > .elementor-widget-spacer
+                > .elementor-widget-container
+                > .elementor-spacer {
+                height: 100%;
+              }
+              .e-con-inner
+                > .elementor-widget-spacer
+                > .elementor-widget-container
+                > .elementor-spacer
+                > .elementor-spacer-inner,
+              .e-con
+                > .elementor-widget-spacer
+                > .elementor-widget-container
+                > .elementor-spacer
+                > .elementor-spacer-inner {
+                height: var(--container-widget-height, var(--spacer-size));
+              }
+              .e-con-inner > .elementor-widget-spacer.elementor-widget-empty,
+              .e-con > .elementor-widget-spacer.elementor-widget-empty {
+                position: relative;
+                min-height: 22px;
+                min-width: 22px;
+              }
+              .e-con-inner
+                > .elementor-widget-spacer.elementor-widget-empty
+                .elementor-widget-empty-icon,
+              .e-con
+                > .elementor-widget-spacer.elementor-widget-empty
+                .elementor-widget-empty-icon {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                padding: 0;
+                width: 22px;
+                height: 22px;
+              }
+            </style>
+            <div class="elementor-spacer">
+              <div class="elementor-spacer-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-1524344 e-flex e-con-boxed e-con e-parent"
+        data-id="1524344"
+        data-element_type="container"
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-d665b34 e-con-full e-flex e-con e-child"
+            data-id="d665b34"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-ed0210a animated-slow elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image"
+              data-id="ed0210a"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="image.default"
+            >
+              <div class="elementor-widget-container">
+                <img
+                  decoding="async"
+                  width="800"
+                  height="670"
+                  src="https://kendoge.io/wp-content/uploads/2024/08/Keeee-1-1024x857.webp"
+                  class="attachment-large size-large wp-image-521"
+                  alt=""
+                  sizes="(max-width: 800px) 100vw, 800px"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-4b051f1 e-con-full e-flex e-con e-child"
+            data-id="4b051f1"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-0fa6f20 animated-slow about elementor-invisible elementor-widget elementor-widget-heading"
+              data-id="0fa6f20"
+              data-element_type="widget"
+              id="about"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  WHo is ken?
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-8fa167a e-flex e-con-boxed e-con e-parent"
+        data-id="8fa167a"
+        data-element_type="container"
+        data-settings='{"background_background":"classic"}'
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-9f9d0c5 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+            data-id="9f9d0c5"
+            data-element_type="widget"
+            data-settings='{"_animation":"fadeInUp"}'
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                "Ken was a beloved mixed-breed dog who joined our family in the
+                fall of 1996 as a one-month-old puppy. Growing up alongside two
+                older brothers and surrounded by neighborhood friends, Ken
+                quickly became a cherished member of our lively household. Known
+                for his playful and mischievous nature, he was an adventurous
+                spirit who loved car rides and outdoor trips, especially our
+                annual 10-day summer camps in Hokkaido. Ken left lasting paw
+                prints across the island and in our hearts. He was with us for
+                ten wonderful years, and his memory continues to bring warmth
+                and joy to our lives.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-3532f5f e-flex e-con-boxed e-con e-parent"
+        data-id="3532f5f"
+        data-element_type="container"
+        data-settings='{"background_background":"classic"}'
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-d4cefd6 animated-slow howto elementor-invisible elementor-widget elementor-widget-heading"
+            data-id="d4cefd6"
+            data-element_type="widget"
+            id="howto"
+            data-settings='{"_animation":"fadeInUp"}'
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                how to buy
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-c097aac e-flex e-con-boxed e-con e-parent"
+        data-id="c097aac"
+        data-element_type="container"
+        data-settings='{"background_background":"classic","shape_divider_bottom":"curve","shape_divider_bottom_negative":"yes"}'
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-shape elementor-shape-bottom"
+            data-negative="true"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1000 100"
+              preserveAspectRatio="none"
+            >
+              <path
+                class="elementor-shape-fill"
+                d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"
+              />
+            </svg>
+          </div>
+          <div
+            class="elementor-element elementor-element-146088b e-con-full e-flex e-con e-child"
+            data-id="146088b"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-7e4fdcb animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+              data-id="7e4fdcb"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  1
+                </h2>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-4a2e449 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+              data-id="4a2e449"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  Create a wallet
+                </h2>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-498d135 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+              data-id="498d135"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  Download a Ethereum wallet. We recommend Metamask.
+                  These can be downloaded from the appstore or as chrome
+                  extensions for desktop users.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-c2362cb e-con-full e-flex e-con e-child"
+            data-id="c2362cb"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-ef58a6c animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+              data-id="ef58a6c"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  2
+                </h2>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-29ed900 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+              data-id="29ed900"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  ADD ETHEREUM
+                </h2>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-7051f56 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+              data-id="7051f56"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  Purchase Ethereum through the Metamask wallet or alternatively
+                  send Ethereum to your new wallet from an exchange.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-0174406 e-con-full e-flex e-con e-child"
+            data-id="0174406"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-41e1672 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+              data-id="41e1672"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  3
+                </h2>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-b6fd2fe animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+              data-id="b6fd2fe"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  Swap ETH for $KEN
+                </h2>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-95ec32c animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+              data-id="95ec32c"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  Open uniswap.org. Click 'launch app', connect your wallet.
+                  Convert ETH to $KEN by pasting the contract address into the
+                  second box.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-89dc5eb e-con-full e-flex e-con e-child"
+            data-id="89dc5eb"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-5439589 elementor-view-stacked animated-slow elementor-shape-circle elementor-invisible elementor-widget elementor-widget-icon"
+              data-id="5439589"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="icon.default"
+            >
+              <div class="elementor-widget-container">
+                <div class="elementor-icon-wrapper">
+                  <div class="elementor-icon">
+                    <svg
+                      aria-hidden="true"
+                      class="e-font-icon-svg e-fas-angle-down"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-504b4aa e-con-full e-flex e-con e-child"
+            data-id="504b4aa"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-7e57ddf animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+              data-id="7e57ddf"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  CA
+                </h2>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-043ca9e animated-slow elementor-widget-mobile__width-inherit elementor-invisible elementor-widget elementor-widget-heading"
+              data-id="043ca9e"
+              data-element_type="widget"
+              data-settings='{"_animation":"fadeInUp"}'
+              data-widget_type="heading.default"
+            >
+              <div class="elementor-widget-container">
+                <h2 class="elementor-heading-title elementor-size-default">
+                  0x...
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-ecb7876 e-con-full e-flex e-con e-parent"
+        data-id="ecb7876"
+        data-element_type="container"
+        data-settings='{"background_background":"classic"}'
+      ></div>
+      <div
+        class="elementor-element elementor-element-9f908bf e-con-full e-flex e-con e-parent"
+        data-id="9f908bf"
+        data-element_type="container"
+        data-settings='{"background_background":"classic"}'
+      >
+        <div
+          class="elementor-element elementor-element-32a0a2d kenomics elementor-widget elementor-widget-image"
+          data-id="32a0a2d"
+          data-element_type="widget"
+          id="kenomics"
+          data-widget_type="image.default"
+        >
+          <div class="elementor-widget-container">
+            <img
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="382"
+              src="https://kendoge.io/wp-content/uploads/2024/08/keno-mics-1-1024x489.png"
+              class="attachment-large size-large wp-image-603"
+              alt=""
+              sizes="(max-width: 800px) 100vw, 800px"
+            />
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-bfd87ec e-con-full e-flex e-con e-child"
+          data-id="bfd87ec"
+          data-element_type="container"
+          data-settings='{"background_background":"classic"}'
+        >
+          <div
+            class="elementor-element elementor-element-dc4aa78 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+            data-id="dc4aa78"
+            data-element_type="widget"
+            data-settings='{"_animation":"fadeInUp"}'
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                Initial supply - 1b circulating supply - 1b LIQUIDITY - bURNT
+                NETWORK - ETHEREUM
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-b17b515 animated-slow elementor-invisible elementor-widget elementor-widget-image"
+          data-id="b17b515"
+          data-element_type="widget"
+          data-settings='{"_animation":"fadeInUp"}'
+          data-widget_type="image.default"
+        >
+          <div class="elementor-widget-container">
+            <img
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="800"
+              src="https://kendoge.io/wp-content/uploads/2024/08/Frame-5-3-1024x1024.png"
+              class="attachment-large size-large wp-image-576"
+              alt=""
+              sizes="(max-width: 800px) 100vw, 800px"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-8e69828 e-con-full e-flex e-con e-parent"
+        data-id="8e69828"
+        data-element_type="container"
+        data-settings='{"background_background":"classic"}'
+      >
+        <div
+          class="elementor-element elementor-element-b0a1d54 e-con-full e-flex e-con e-child"
+          data-id="b0a1d54"
+          data-element_type="container"
+        ></div>
+        <div
+          class="elementor-element elementor-element-4746eaf e-con-full e-flex e-con e-child"
+          data-id="4746eaf"
+          data-element_type="container"
+          data-settings='{"background_background":"classic"}'
+        >
+          <div
+            class="elementor-element elementor-element-b653566 elementor-widget elementor-widget-heading"
+            data-id="b653566"
+            data-element_type="widget"
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                THE $KEN COMMUNITY
+              </h2>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-3f11f34 e-con-full e-flex e-con e-child"
+            data-id="3f11f34"
+            data-element_type="container"
+          >
+            <div
+              class="elementor-element elementor-element-b92c076 elementor-widget__width-auto e-transform e-transform e-transform elementor-widget elementor-widget-button"
+              data-id="b92c076"
+              data-element_type="widget"
+              data-settings='{"_transform_rotateZ_effect_hover":{"unit":"px","size":10,"sizes":[]},"_transform_rotateZ_effect":{"unit":"px","size":10,"sizes":[]},"_transform_rotateZ_effect_mobile":{"unit":"deg","size":0,"sizes":[]},"_transform_rotateZ_effect_hover_mobile":{"unit":"deg","size":0,"sizes":[]},"_transform_rotateZ_effect_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_rotateZ_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewX_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewY_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]}}'
+              data-widget_type="button.default"
+            >
+              <div class="elementor-widget-container">
+                <div class="elementor-button-wrapper">
+                  <a
+                    class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+                    href="https://t.me/"
+                  >
+                    <span class="elementor-button-content-wrapper">
+                      <span class="elementor-button-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="12"
+                          height="10"
+                          viewBox="0 0 12 10"
+                          fill="none"
+                        >
+                          <path
+                            d="M4.91893 6.33785L4.74484 8.78647C4.99391 8.78647 5.10179 8.67948 5.23115 8.55099L6.39889 7.43499L8.81857 9.207C9.26234 9.45432 9.575 9.32408 9.69471 8.79875L11.283 1.35641L11.2834 1.35597C11.4242 0.699963 11.0462 0.443436 10.6138 0.604368L1.278 4.17864C0.640853 4.42596 0.6505 4.78115 1.16969 4.94208L3.55649 5.68447L9.10053 2.21544C9.36144 2.04267 9.59868 2.13827 9.40354 2.31104L4.91893 6.33785Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="elementor-element elementor-element-eae214e elementor-widget__width-auto e-transform e-transform e-transform elementor-widget elementor-widget-button"
+              data-id="eae214e"
+              data-element_type="widget"
+              data-settings='{"_transform_rotateZ_effect_hover":{"unit":"px","size":10,"sizes":[]},"_transform_rotateZ_effect":{"unit":"px","size":-10,"sizes":[]},"_transform_rotateZ_effect_mobile":{"unit":"deg","size":0,"sizes":[]},"_transform_rotateZ_effect_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_rotateZ_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_rotateZ_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewX_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewY_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]}}'
+              data-widget_type="button.default"
+            >
+              <div class="elementor-widget-container">
+                <div class="elementor-button-wrapper">
+                  <a
+                    class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+                    href="https://x.com/"
+                  >
+                    <span class="elementor-button-content-wrapper">
+                      <span class="elementor-button-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="11"
+                          height="11"
+                          viewBox="0 0 11 11"
+                          fill="none"
+                        >
+                          <path
+                            d="M6.02419 4.61256L8.65285 0.426301L7.89748 0.540254L5.61501 4.17513L2.919 1.29129L0.369263 1.67593L4.44615 6.0368L1.68938 10.4268L2.44479 10.3128L4.85514 6.47426L7.70231 9.51967L10.252 9.13503L6.02401 4.61258L6.02419 4.61256ZM5.17098 5.97129L4.75918 5.53793L1.48265 2.08957L2.64292 1.91454L5.28713 4.69748L5.69893 5.13085L9.13608 8.74823L7.97581 8.92326L5.17101 5.97148L5.17098 5.97129Z"
+                            fill="black"
+                          ></path>
+                        </svg>
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="elementor-element elementor-element-0dec82a e-con-full e-flex e-con e-parent"
+        data-id="0dec82a"
+        data-element_type="container"
+      >
+        <div
+          class="elementor-element elementor-element-d6d0669 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+          data-id="d6d0669"
+          data-element_type="widget"
+          data-widget_type="icon-list.default"
+        >
+          <div class="elementor-widget-container">
+            <link
+              rel="stylesheet"
+              href="https://kendoge.io/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css"
+            />
+          </div>
+        </div>
+        <div
+          class="elementor-element elementor-element-f378799 elementor-widget elementor-widget-heading"
+          data-id="f378799"
+          data-element_type="widget"
+          data-widget_type="heading.default"
+        >
+          <div class="elementor-widget-container">
+            <h2 class="elementor-heading-title elementor-size-default">
+              ©ALL RIGHTS RESERVED . 2024
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-elementor-type="popup"
+      data-elementor-id="406"
+      class="elementor elementor-406 elementor-location-popup"
+      data-elementor-settings='{"entrance_animation":"fadeInUp","exit_animation":"fadeInDown","entrance_animation_duration":{"unit":"px","size":0.5,"sizes":[]},"a11y_navigation":"yes","triggers":[],"timing":[]}'
+      data-elementor-post-type="elementor_library"
+    >
+      <div
+        class="elementor-element elementor-element-a615838 e-flex e-con-boxed e-con e-parent"
+        data-id="a615838"
+        data-element_type="container"
+        data-settings='{"background_background":"classic"}'
+      >
+        <div class="e-con-inner">
+          <div
+            class="elementor-element elementor-element-78789e5 elementor-widget elementor-widget-heading"
+            data-id="78789e5"
+            data-element_type="widget"
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <style>
+                /*! elementor - v3.23.0 - 05-08-2024 */
+                .elementor-heading-title {
+                  padding: 0;
+                  margin: 0;
+                  line-height: 1;
+                }
+                .elementor-widget-heading
+                  .elementor-heading-title[class*="elementor-size-"]
+                  > a {
+                  color: inherit;
+                  font-size: inherit;
+                  line-height: inherit;
+                }
+                .elementor-widget-heading
+                  .elementor-heading-title.elementor-size-small {
+                  font-size: 15px;
+                }
+                .elementor-widget-heading
+                  .elementor-heading-title.elementor-size-medium {
+                  font-size: 19px;
+                }
+                .elementor-widget-heading
+                  .elementor-heading-title.elementor-size-large {
+                  font-size: 29px;
+                }
+                .elementor-widget-heading
+                  .elementor-heading-title.elementor-size-xl {
+                  font-size: 39px;
+                }
+                .elementor-widget-heading
+                  .elementor-heading-title.elementor-size-xxl {
+                  font-size: 59px;
+                }
+              </style>
+              <h2 class="elementor-heading-title elementor-size-default">
+                <a href="#about">About</a>
+              </h2>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-2728fdd elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+            data-id="2728fdd"
+            data-element_type="widget"
+            data-widget_type="divider.default"
+          >
+            <div class="elementor-widget-container">
+              <style>
+                /*! elementor - v3.23.0 - 05-08-2024 */
+                .elementor-widget-divider {
+                  --divider-border-style: none;
+                  --divider-border-width: 1px;
+                  --divider-color: #0c0d0e;
+                  --divider-icon-size: 20px;
+                  --divider-element-spacing: 10px;
+                  --divider-pattern-height: 24px;
+                  --divider-pattern-size: 20px;
+                  --divider-pattern-url: none;
+                  --divider-pattern-repeat: repeat-x;
+                }
+                .elementor-widget-divider .elementor-divider {
+                  display: flex;
+                }
+                .elementor-widget-divider .elementor-divider__text {
+                  font-size: 15px;
+                  line-height: 1;
+                  max-width: 95%;
+                }
+                .elementor-widget-divider .elementor-divider__element {
+                  margin: 0 var(--divider-element-spacing);
+                  flex-shrink: 0;
+                }
+                .elementor-widget-divider .elementor-icon {
+                  font-size: var(--divider-icon-size);
+                }
+                .elementor-widget-divider .elementor-divider-separator {
+                  display: flex;
+                  margin: 0;
+                  direction: ltr;
+                }
+                .elementor-widget-divider--view-line_icon
+                  .elementor-divider-separator,
+                .elementor-widget-divider--view-line_text
+                  .elementor-divider-separator {
+                  align-items: center;
+                }
+                .elementor-widget-divider--view-line_icon
+                  .elementor-divider-separator:after,
+                .elementor-widget-divider--view-line_icon
+                  .elementor-divider-separator:before,
+                .elementor-widget-divider--view-line_text
+                  .elementor-divider-separator:after,
+                .elementor-widget-divider--view-line_text
+                  .elementor-divider-separator:before {
+                  display: block;
+                  content: "";
+                  border-block-end: 0;
+                  flex-grow: 1;
+                  border-block-start: var(--divider-border-width)
+                    var(--divider-border-style) var(--divider-color);
+                }
+                .elementor-widget-divider--element-align-left
+                  .elementor-divider
+                  .elementor-divider-separator
+                  > .elementor-divider__svg:first-of-type {
+                  flex-grow: 0;
+                  flex-shrink: 100;
+                }
+                .elementor-widget-divider--element-align-left
+                  .elementor-divider-separator:before {
+                  content: none;
+                }
+                .elementor-widget-divider--element-align-left
+                  .elementor-divider__element {
+                  margin-left: 0;
+                }
+                .elementor-widget-divider--element-align-right
+                  .elementor-divider
+                  .elementor-divider-separator
+                  > .elementor-divider__svg:last-of-type {
+                  flex-grow: 0;
+                  flex-shrink: 100;
+                }
+                .elementor-widget-divider--element-align-right
+                  .elementor-divider-separator:after {
+                  content: none;
+                }
+                .elementor-widget-divider--element-align-right
+                  .elementor-divider__element {
+                  margin-right: 0;
+                }
+                .elementor-widget-divider--element-align-start
+                  .elementor-divider
+                  .elementor-divider-separator
+                  > .elementor-divider__svg:first-of-type {
+                  flex-grow: 0;
+                  flex-shrink: 100;
+                }
+                .elementor-widget-divider--element-align-start
+                  .elementor-divider-separator:before {
+                  content: none;
+                }
+                .elementor-widget-divider--element-align-start
+                  .elementor-divider__element {
+                  margin-inline-start: 0;
+                }
+                .elementor-widget-divider--element-align-end
+                  .elementor-divider
+                  .elementor-divider-separator
+                  > .elementor-divider__svg:last-of-type {
+                  flex-grow: 0;
+                  flex-shrink: 100;
+                }
+                .elementor-widget-divider--element-align-end
+                  .elementor-divider-separator:after {
+                  content: none;
+                }
+                .elementor-widget-divider--element-align-end
+                  .elementor-divider__element {
+                  margin-inline-end: 0;
+                }
+                .elementor-widget-divider:not(
+                    .elementor-widget-divider--view-line_text
+                  ):not(.elementor-widget-divider--view-line_icon)
+                  .elementor-divider-separator {
+                  border-block-start: var(--divider-border-width)
+                    var(--divider-border-style) var(--divider-color);
+                }
+                .elementor-widget-divider--separator-type-pattern {
+                  --divider-border-style: none;
+                }
+                .elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line
+                  .elementor-divider-separator,
+                .elementor-widget-divider--separator-type-pattern:not(
+                    .elementor-widget-divider--view-line
+                  )
+                  .elementor-divider-separator:after,
+                .elementor-widget-divider--separator-type-pattern:not(
+                    .elementor-widget-divider--view-line
+                  )
+                  .elementor-divider-separator:before,
+                .elementor-widget-divider--separator-type-pattern:not(
+                    [class*="elementor-widget-divider--view"]
+                  )
+                  .elementor-divider-separator {
+                  width: 100%;
+                  min-height: var(--divider-pattern-height);
+                  -webkit-mask-size: var(--divider-pattern-size) 100%;
+                  mask-size: var(--divider-pattern-size) 100%;
+                  -webkit-mask-repeat: var(--divider-pattern-repeat);
+                  mask-repeat: var(--divider-pattern-repeat);
+                  background-color: var(--divider-color);
+                  -webkit-mask-image: var(--divider-pattern-url);
+                  mask-image: var(--divider-pattern-url);
+                }
+                .elementor-widget-divider--no-spacing {
+                  --divider-pattern-size: auto;
+                }
+                .elementor-widget-divider--bg-round {
+                  --divider-pattern-repeat: round;
+                }
+                .rtl .elementor-widget-divider .elementor-divider__text {
+                  direction: rtl;
+                }
+                .e-con-inner > .elementor-widget-divider,
+                .e-con > .elementor-widget-divider {
+                  width: var(--container-widget-width, 100%);
+                  --flex-grow: var(--container-widget-flex-grow);
+                }
+              </style>
+              <div class="elementor-divider">
+                <span class="elementor-divider-separator"> </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-4c87a4c elementor-widget elementor-widget-heading"
+            data-id="4c87a4c"
+            data-element_type="widget"
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                <a href="#howto">How to buy</a>
+              </h2>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-0bcb315 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+            data-id="0bcb315"
+            data-element_type="widget"
+            data-widget_type="divider.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-divider">
+                <span class="elementor-divider-separator"> </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-47be047 elementor-widget elementor-widget-heading"
+            data-id="47be047"
+            data-element_type="widget"
+            data-widget_type="heading.default"
+          >
+            <div class="elementor-widget-container">
+              <h2 class="elementor-heading-title elementor-size-default">
+                <a href="#kenomics">ken-omics</a>
+              </h2>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-a819797 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+            data-id="a819797"
+            data-element_type="widget"
+            data-widget_type="divider.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-divider">
+                <span class="elementor-divider-separator"> </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-element elementor-element-f79b279 elementor-widget__width-auto e-transform e-transform elementor-widget elementor-widget-button"
+            data-id="f79b279"
+            data-element_type="widget"
+            data-settings='{"_transform_rotateZ_effect_hover":{"unit":"px","size":10,"sizes":[]},"_transform_rotateZ_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_rotateZ_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewX_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewX_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover":{"unit":"px","size":"","sizes":[]},"_transform_skewY_effect_hover_tablet":{"unit":"deg","size":"","sizes":[]},"_transform_skewY_effect_hover_mobile":{"unit":"deg","size":"","sizes":[]}}'
+            data-widget_type="button.default"
+          >
+            <div class="elementor-widget-container">
+              <div class="elementor-button-wrapper">
+                <a
+                  class="elementor-button elementor-button-link elementor-size-sm elementor-animation-grow"
+                  href="https://app.uniswap.org/#/swap?inputCurrency=eth&outputCurrency=0x..."
+                >
+                  <span class="elementor-button-content-wrapper">
+                    <span class="elementor-button-text">Buy Ken</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script type="text/javascript">
+      const lazyloadRunObserver = () => {
+        const lazyloadBackgrounds = document.querySelectorAll(
+          `.e-con.e-parent:not(.e-lazyloaded)`
+        );
+        const lazyloadBackgroundObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                let lazyloadBackground = entry.target;
+                if (lazyloadBackground) {
+                  lazyloadBackground.classList.add("e-lazyloaded");
+                }
+                lazyloadBackgroundObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { rootMargin: "200px 0px 200px 0px" }
+        );
+        lazyloadBackgrounds.forEach((lazyloadBackground) => {
+          lazyloadBackgroundObserver.observe(lazyloadBackground);
+        });
+      };
+      const events = ["DOMContentLoaded", "elementor/lazyload/observe"];
+      events.forEach((event) => {
+        document.addEventListener(event, lazyloadRunObserver);
+      });
+    </script>
+    <div id="gdl-live-site-control"></div>
+    <link
+      rel="stylesheet"
+      id="e-animations-css"
+      href="https://kendoge.io/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.23.4"
+      media="all"
+    />
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2"
+      id="wp-polyfill-inert-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0"
+      id="regenerator-runtime-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"
+      id="wp-polyfill-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/vendor/react.min.js?ver=18.2.0"
+      id="react-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18"
+      id="wp-hooks-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
+      id="wp-i18n-js"
+    ></script>
+    <script id="wp-i18n-js-after">
+      wp.i18n.setLocaleData({ "text direction\u0004ltr": ["ltr"] });
+    </script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/url.min.js?ver=421139b01f33e5b327d8"
+      id="wp-url-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/api-fetch.min.js?ver=4c185334c5ec26e149cc"
+      id="wp-api-fetch-js"
+    ></script>
+    <script id="wp-api-fetch-js-after">
+      wp.apiFetch.use(
+        wp.apiFetch.createRootURLMiddleware("https://kendoge.io/wp-json/")
+      );
+      wp.apiFetch.nonceMiddleware =
+        wp.apiFetch.createNonceMiddleware("982eb7fafd");
+      wp.apiFetch.use(wp.apiFetch.nonceMiddleware);
+      wp.apiFetch.use(wp.apiFetch.mediaUploadMiddleware);
+      wp.apiFetch.nonceEndpoint =
+        "https://kendoge.io/wp-admin/admin-ajax.php?action=rest-nonce";
+    </script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.2.0"
+      id="react-dom-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/dom-ready.min.js?ver=f77871ff7694fffea381"
+      id="wp-dom-ready-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/a11y.min.js?ver=d90eebea464f6c09bfd5"
+      id="wp-a11y-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/deprecated.min.js?ver=e1f84915c5e8ae38964c"
+      id="wp-deprecated-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/dom.min.js?ver=4ecffbffba91b10c5c7a"
+      id="wp-dom-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/escape-html.min.js?ver=6561a406d2d232a6fbd2"
+      id="wp-escape-html-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/element.min.js?ver=cb762d190aebbec25b27"
+      id="wp-element-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/is-shallow-equal.min.js?ver=e0f9f1d78d83f5196979"
+      id="wp-is-shallow-equal-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/keycodes.min.js?ver=034ff647a54b018581d3"
+      id="wp-keycodes-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/priority-queue.min.js?ver=9c21c957c7e50ffdbf48"
+      id="wp-priority-queue-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/compose.min.js?ver=1339d3318cd44440dccb"
+      id="wp-compose-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/vendor/moment.min.js?ver=2.29.4"
+      id="moment-js"
+    ></script>
+    <script id="moment-js-after">
+      moment.updateLocale("en_US", {
+        months: [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ],
+        monthsShort: [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ],
+        weekdays: [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ],
+        weekdaysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+        week: { dow: 1 },
+        longDateFormat: {
+          LT: "g:i a",
+          LTS: null,
+          L: null,
+          LL: "F j, Y",
+          LLL: "F j, Y g:i a",
+          LLLL: null,
+        },
+      });
+    </script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/date.min.js?ver=aaca6387d1cf924acc51"
+      id="wp-date-js"
+    ></script>
+    <script id="wp-date-js-after">
+      wp.date.setSettings({
+        l10n: {
+          locale: "en_US",
+          months: [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+          ],
+          monthsShort: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          weekdays: [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+          ],
+          weekdaysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+          meridiem: { am: "am", pm: "pm", AM: "AM", PM: "PM" },
+          relative: {
+            future: "%s from now",
+            past: "%s ago",
+            s: "a second",
+            ss: "%d seconds",
+            m: "a minute",
+            mm: "%d minutes",
+            h: "an hour",
+            hh: "%d hours",
+            d: "a day",
+            dd: "%d days",
+            M: "a month",
+            MM: "%d months",
+            y: "a year",
+            yy: "%d years",
+          },
+          startOfWeek: 1,
+        },
+        formats: {
+          time: "g:i a",
+          date: "F j, Y",
+          datetime: "F j, Y g:i a",
+          datetimeAbbreviated: "M j, Y g:i a",
+        },
+        timezone: { offset: 0, offsetFormatted: "0", string: "", abbr: "" },
+      });
+    </script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/html-entities.min.js?ver=2cd3358363e0675638fb"
+      id="wp-html-entities-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/primitives.min.js?ver=a41bfd5835f583ae838a"
+      id="wp-primitives-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/private-apis.min.js?ver=5e7fdf55d04b8c2aadef"
+      id="wp-private-apis-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/redux-routine.min.js?ver=b14553dce2bee5c0f064"
+      id="wp-redux-routine-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/data.min.js?ver=e6595ba1a7cd34429f66"
+      id="wp-data-js"
+    ></script>
+    <script id="wp-data-js-after">
+      (function () {
+        var userId = 0;
+        var storageKey = "WP_DATA_USER_" + userId;
+        wp.data.use(wp.data.plugins.persistence, { storageKey: storageKey });
+      })();
+    </script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/rich-text.min.js?ver=dd125966cf6cc0394ae0"
+      id="wp-rich-text-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/warning.min.js?ver=ed7c8b0940914f4fe44b"
+      id="wp-warning-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/components.min.js?ver=c4b2ef1c62202e4e2d1e"
+      id="wp-components-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/blob.min.js?ver=9113eed771d446f4a556"
+      id="wp-blob-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/autop.min.js?ver=9fb50649848277dd318d"
+      id="wp-autop-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/block-serialization-default-parser.min.js?ver=14d44daebf663d05d330"
+      id="wp-block-serialization-default-parser-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/shortcode.min.js?ver=b7747eee0efafd2f0c3b"
+      id="wp-shortcode-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/blocks.min.js?ver=6612d078dfaf28b875b8"
+      id="wp-blocks-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/keyboard-shortcuts.min.js?ver=4d239ebc17efd846a168"
+      id="wp-keyboard-shortcuts-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/commands.min.js?ver=e4060e55811e7824feb9"
+      id="wp-commands-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/notices.min.js?ver=673a68a7ac2f556ed50b"
+      id="wp-notices-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/preferences-persistence.min.js?ver=3f5184d775ed9dfb154f"
+      id="wp-preferences-persistence-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/preferences.min.js?ver=e1544c6f06a9639c4c31"
+      id="wp-preferences-js"
+    ></script>
+    <script id="wp-preferences-js-after">
+      (function () {
+        var serverData = false;
+        var userId = "0";
+        var persistenceLayer =
+          wp.preferencesPersistence.__unstableCreatePersistenceLayer(
+            serverData,
+            userId
+          );
+        var preferencesStore = wp.preferences.store;
+        wp.data
+          .dispatch(preferencesStore)
+          .setPersistenceLayer(persistenceLayer);
+      })();
+    </script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/style-engine.min.js?ver=03f13c515060de24b556"
+      id="wp-style-engine-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/token-list.min.js?ver=05f8a6df6258f0081718"
+      id="wp-token-list-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/wordcount.min.js?ver=55d8c2bf3dc99e7ea5ec"
+      id="wp-wordcount-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/block-editor.min.js?ver=868d782fcb169133c92b"
+      id="wp-block-editor-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/dist/core-data.min.js?ver=ff4b03fefe97d027b7fd"
+      id="wp-core-data-js"
+    ></script>
+    <script id="live-site-control-js-extra">
+      var gdlLiveSiteControlData = {
+        page: "",
+        appContainerClass: "gdl-live-site-control",
+        portalContainerClass: "gdl-live-site-control-portal",
+        settings: {
+          publishState: "gdl_site_published",
+          blogPublic: "blog_public",
+          liveSiteDismiss: "gdl_live_site_dismiss",
+        },
+        previewArg: "gdl-live-control-preview",
+        eventName: "gdl-live-control-go-live",
+        isReseller: "1",
+        shouldUseReact18Syntax: "true",
+        isCaaSGenerated: "false",
+        siteUrl: "kendoge.io",
+        isMigratedSite: "",
+        siteId: "b8fbc595-3ec8-4969-88c5-0251908c2a86",
+      };
+    </script>
+    <script
+      src="https://kendoge.io/wp-content/mu-plugins/vendor/wpex/godaddy-launch/build/live-site-control.js?ver=17bfadf6c6046575fb0e"
+      id="live-site-control-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.1.1"
+      id="hello-theme-frontend-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.23.3"
+      id="elementor-pro-webpack-runtime-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.23.4"
+      id="elementor-webpack-runtime-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
+      id="jquery-core-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+      id="jquery-migrate-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.23.4"
+      id="elementor-frontend-modules-js"
+    ></script>
+    <script id="elementor-pro-frontend-js-before">
+      var ElementorProFrontendConfig = {
+        ajaxurl: "https:\/\/kendoge.io\/wp-admin\/admin-ajax.php",
+        nonce: "8fa844ec6e",
+        urls: {
+          assets:
+            "https:\/\/kendoge.io\/wp-content\/plugins\/elementor-pro\/assets\/",
+          rest: "https:\/\/kendoge.io\/wp-json\/",
+        },
+        shareButtonsNetworks: {
+          facebook: { title: "Facebook", has_counter: true },
+          twitter: { title: "Twitter" },
+          linkedin: { title: "LinkedIn", has_counter: true },
+          pinterest: { title: "Pinterest", has_counter: true },
+          reddit: { title: "Reddit", has_counter: true },
+          vk: { title: "VK", has_counter: true },
+          odnoklassniki: { title: "OK", has_counter: true },
+          tumblr: { title: "Tumblr" },
+          digg: { title: "Digg" },
+          skype: { title: "Skype" },
+          stumbleupon: { title: "StumbleUpon", has_counter: true },
+          mix: { title: "Mix" },
+          telegram: { title: "Telegram" },
+          pocket: { title: "Pocket", has_counter: true },
+          xing: { title: "XING", has_counter: true },
+          whatsapp: { title: "WhatsApp" },
+          email: { title: "Email" },
+          print: { title: "Print" },
+          "x-twitter": { title: "X" },
+          threads: { title: "Threads" },
+        },
+        facebook_sdk: { lang: "en_US", app_id: "" },
+        lottie: {
+          defaultAnimationUrl:
+            "https:\/\/kendoge.io\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json",
+        },
+      };
+    </script>
+    <script
+      src="https://kendoge.io/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.23.3"
+      id="elementor-pro-frontend-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"
+      id="elementor-waypoints-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2"
+      id="jquery-ui-core-js"
+    ></script>
+    <script id="elementor-frontend-js-before">
+      var elementorFrontendConfig = {
+        environmentMode: {
+          edit: false,
+          wpPreview: false,
+          isScriptDebug: false,
+        },
+        i18n: {
+          shareOnFacebook: "Share on Facebook",
+          shareOnTwitter: "Share on Twitter",
+          pinIt: "Pin it",
+          download: "Download",
+          downloadImage: "Download image",
+          fullscreen: "Fullscreen",
+          zoom: "Zoom",
+          share: "Share",
+          playVideo: "Play Video",
+          previous: "Previous",
+          next: "Next",
+          close: "Close",
+          a11yCarouselWrapperAriaLabel:
+            "Carousel | Horizontal scrolling: Arrow Left & Right",
+          a11yCarouselPrevSlideMessage: "Previous slide",
+          a11yCarouselNextSlideMessage: "Next slide",
+          a11yCarouselFirstSlideMessage: "This is the first slide",
+          a11yCarouselLastSlideMessage: "This is the last slide",
+          a11yCarouselPaginationBulletMessage: "Go to slide",
+        },
+        is_rtl: false,
+        breakpoints: { xs: 0, sm: 480, md: 768, lg: 1025, xl: 1440, xxl: 1600 },
+        responsive: {
+          breakpoints: {
+            mobile: {
+              label: "Mobile Portrait",
+              value: 767,
+              default_value: 767,
+              direction: "max",
+              is_enabled: true,
+            },
+            mobile_extra: {
+              label: "Mobile Landscape",
+              value: 880,
+              default_value: 880,
+              direction: "max",
+              is_enabled: false,
+            },
+            tablet: {
+              label: "Tablet Portrait",
+              value: 1024,
+              default_value: 1024,
+              direction: "max",
+              is_enabled: true,
+            },
+            tablet_extra: {
+              label: "Tablet Landscape",
+              value: 1200,
+              default_value: 1200,
+              direction: "max",
+              is_enabled: false,
+            },
+            laptop: {
+              label: "Laptop",
+              value: 1366,
+              default_value: 1366,
+              direction: "max",
+              is_enabled: false,
+            },
+            widescreen: {
+              label: "Widescreen",
+              value: 2400,
+              default_value: 2400,
+              direction: "min",
+              is_enabled: false,
+            },
+          },
+        },
+        version: "3.23.4",
+        is_static: false,
+        experimentalFeatures: {
+          e_optimized_css_loading: true,
+          e_font_icon_svg: true,
+          additional_custom_breakpoints: true,
+          container: true,
+          container_grid: true,
+          e_swiper_latest: true,
+          e_nested_atomic_repeaters: true,
+          e_optimized_control_loading: true,
+          e_onboarding: true,
+          theme_builder_v2: true,
+          "hello-theme-header-footer": true,
+          home_screen: true,
+          editor_v2: true,
+          "ai-layout": true,
+          "landing-pages": true,
+          "nested-elements": true,
+          e_lazyload: true,
+          e_element_cache: true,
+          "link-in-bio": true,
+          "floating-buttons": true,
+          "display-conditions": true,
+          "form-submissions": true,
+          "mega-menu": true,
+          "taxonomy-filter": true,
+          search: true,
+        },
+        urls: {
+          assets:
+            "https:\/\/kendoge.io\/wp-content\/plugins\/elementor\/assets\/",
+          ajaxurl: "https:\/\/kendoge.io\/wp-admin\/admin-ajax.php",
+        },
+        nonces: { floatingButtonsClickTracking: "9bf179fbc6" },
+        swiperClass: "swiper",
+        settings: { page: [], editorPreferences: [] },
+        kit: {
+          active_breakpoints: ["viewport_mobile", "viewport_tablet"],
+          global_image_lightbox: "yes",
+          lightbox_enable_counter: "yes",
+          lightbox_enable_fullscreen: "yes",
+          lightbox_enable_zoom: "yes",
+          lightbox_enable_share: "yes",
+          lightbox_title_src: "title",
+          lightbox_description_src: "description",
+          hello_header_logo_type: "logo",
+          hello_footer_logo_type: "logo",
+        },
+        post: {
+          id: 350,
+          title: "Kendoge",
+          excerpt: "",
+          featuredImage:
+            "https:\/\/kendoge.io\/wp-content\/uploads\/2024\/08\/Hero-section-4-1024x999.png",
+        },
+      };
+    </script>
+    <script
+      src="https://kendoge.io/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.23.4"
+      id="elementor-frontend-js"
+    ></script>
+    <script
+      src="https://kendoge.io/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.23.3"
+      id="pro-elements-handlers-js"
+    ></script>
+    <script>
+      "undefined" === typeof _trfq || (window._trfq = []);
+      "undefined" === typeof _trfd && (window._trfd = []),
+        _trfd.push({ "tccl.baseHost": "secureserver.net" }),
+        _trfd.push(
+          { ap: "wpaas" },
+          { server: "519bfc13-3029-f2be-4798-bbb12ef5240a.secureserver.net" },
+          { pod: "P3NLWPPOD11" },
+          { storage: "p3cephmah005pod11_data08" },
+          { xid: "45550999" },
+          { wp: "6.5.5" },
+          { php: "8.0.30.2" },
+          { loggedin: "0" },
+          { cdn: "1" },
+          { builder: "elementor" },
+          { theme: "hello-elementor" },
+          { wds: "0" },
+          { wp_alloptions_count: "289" },
+          { wp_alloptions_bytes: "56767" }
+        );
+    </script>
+    <script>
+      window.addEventListener("click", function (elem) {
+        var _elem$target, _elem$target$dataset, _window, _window$_trfq;
+        return (
+          (elem === null || elem === void 0
+            ? void 0
+            : (_elem$target = elem.target) === null || _elem$target === void 0
+            ? void 0
+            : (_elem$target$dataset = _elem$target.dataset) === null ||
+              _elem$target$dataset === void 0
+            ? void 0
+            : _elem$target$dataset.eid) &&
+          ((_window = window) === null || _window === void 0
+            ? void 0
+            : (_window$_trfq = _window._trfq) === null ||
+              _window$_trfq === void 0
+            ? void 0
+            : _window$_trfq.push([
+                "cmdLogEvent",
+                "click",
+                elem.target.dataset.eid,
+              ]))
+        );
+      });
+    </script>
+    <script src="https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js"></script>
+    <script
+      src="https://img1.wsimg.com/traffic-assets/js/tccl-tti.min.js"
+      onload="window.tti.calculateTTI()"
+    ></script>
+  </body>
+</html>
